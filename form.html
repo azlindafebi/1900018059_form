@@ -1,39 +1,266 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>FORM PENDAFTARAN</title>
+	<title>Volunteer - Form Pendaftaran</title>
+	<style type="text/css">
+		body{
+		background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(bg.jpg);
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		}
+		*{
+			margin: 0;
+			padding: 0;}
+			.input{ border: 2px ;
+				width: 800px;height: 700px;
+				margin: auto; 	position: absolute;
+				top: 5%;
+				left: 20%;
+				transform: translate(-40%;-60%);
+				color: #000;
+				box-sizing: border-box;
+				border-radius: 20px;
+				background-color:#E9967A;
+				padding: 0px 30px;
+					border-right: 3px solid black;
+				
+				}
+			
+				.lengkap{
+				font-family: Century;
+                font-size: 10pt;
+                width: 415px;
+                height: 35px;
+                border: 1px solid #000000;
+                padding-left: 5px;
+                margin-top: 10px;
+                margin-left: 15px;
+                display: compact;
+                box-shadow: #000000;
+                border-radius: 5px;
+                border-right: 3px solid black;
+				}
+				.lahir{
+				font-family: Century;
+                font-size: 10pt;
+                width: 415px;
+                height: 35px;
+                border: 1px solid #000000;
+                padding-left: 5px;
+                margin-top: 10px;
+                margin-left: 15px;
+                display: compact;
+                box-shadow: #000000;
+                border-radius: 5px;
+                border-right: 3px solid black;
+				}
+				.tgl{
+				font-family: Century;
+                font-size: 10pt;
+                width: 415px;
+                height: 35px;
+                border: 1px solid #000000;
+                padding-left: 5px;
+                margin-top: 10px;
+                margin-left: 15px;
+                display: compact;
+                box-shadow: #000000;
+                border-radius: 5px;
+                border-right: 3px solid black;
+				}
+				.mail{
+				font-family: Century;
+                font-size: 10pt;
+                width: 415px;
+                height: 35px;
+                border: 1px solid #000000;
+                padding-left: 5px;
+                margin-top: 10px;
+                margin-left: 15px;
+                display: compact;
+                box-shadow: #000000;
+                border-radius: 5px;
+                border-right: 3px solid black;
+				}
+				.jenis{
+				margin-left: 15px;
+                color: #000000;
+                font-family: Century;
+                font-size: 12pt;
+                text-align: left;
+                border-right: 3px solid black;
+				}
+				.tlp{
+				font-family: Century;
+                font-size: 10pt;
+                width: 415px;
+                height: 35px;
+                border: 1px solid #000000;
+                padding-left: 5px;
+                margin-top: 10px;
+                margin-left: 15px;
+                display: compact;
+                box-shadow: #000000;
+                border-radius: 5px;
+                border-right: 3px solid black;
+				}
+				.provinsi{
+				font-family: Century;
+                font-size: 12pt;
+                color: #000000;
+                border: 1px solid #000000;
+                margin-left: 15px;
+                height: 30px;
+                margin-right: -18px;
+                border-right: 3px solid black;
+				}
+				.kab{
+						font-family: Century;
+                font-size: 10pt;
+                width: 415px;
+                height: 35px;
+                border: 1px solid #000000;
+                padding-left: 5px;
+                margin-top: 10px;
+                margin-left: 15px;
+                display: compact;
+                box-shadow: #000000;
+                border-radius: 5px;
+                border-right: 3px solid black;
+				}
+				.kec{
+				font-family: Century;
+                font-size: 10pt;
+                width: 415px;
+                height: 35px;
+                border: 1px solid #000000;
+                padding-left: 5px;
+                margin-top: 10px;
+                margin-left: 15px;
+                display: compact;
+                box-shadow: #000000;
+                border-radius: 5px;
+                border-right: 3px solid black;
+				}
+				.ds{
+				font-family: Century;
+                font-size: 10pt;
+                width: 415px;
+                height: 35px;
+                border: 1px solid #000000;
+                padding-left: 5px;
+                margin-top: 10px;
+                margin-left: 15px;
+                display: compact;
+                box-shadow: #000000;
+                border-radius: 5px;
+                border-right: 3px solid black;
+				}
+				.tenaga{
+				font-family: Century;
+                font-size: 12pt;
+                color: #000000;
+                border: 1px solid #000000;
+                margin-left: 15px;
+                height: 30px;
+                margin-right: -18px;
+                border-right: 3px solid black;
+				}
+				.submit{
+				background-color: lightblue;
+				cursor: pointer;
+				width: 15%;
+				transition: 0.5%;
+				color: black;
+				}
+				
+			
+	</style>
 </head>
 <body>
-	<form method="POST" action="form.php">
-	<table border="1" align="center">
-	<tr>
-		<td>
-			<pre>
-				<b><center><p>FORMULIR PENDAFTARAN</p></center></b>
-				<p> Nama Lengkap		: <input type="text" name="Nama"></p>
-				<p> TTL 			: <input type="text" name="TTL"></p>
-				<p> Alamat 		: <input type="text" name="Alamat"></p>
-				<p> Jenis Kelamin		: <input type="radio" name=" myradio" value="Laki-laki">Laki-laki<input type="radio" name="myradio" value="perempuan">perempuan</p>
-				<p> Agama 			: <select> <option> Silahkan pilih </option>
-					<option> Islam</option>
-					<option> Kristen</option>
-					<option> Hindu</option>
-					<option> Budha</option></select></p>
-				<p> Prodi 			: <input type="text" name="Prodi"></p>
-				<p> Cita-cita		: <input type="text" name="Cita-cita"></p>
-				<p> Hobi			: <input type="checkbox" name="Hobi">Mendengarkan musik
-			<input type="checkbox" name="Hobi">Membaca
-			<input type="checkbox" name="Hobi">Menonton film
-			<input type="checkbox" name="Hobi">Olahraga
-			<input type="checkbox" name="Hobi">Menggambar</p>
-				<p> Motivasi mengikuti kegiatan :</p>
-								<p> <textarea></textarea></p>
-				<p><input type="submit" name="ok" value="Kirim"><input type="submit" name="ok" value="Batal"></p>
-			</pre>
-		</td>
-	</tr>
-	
-</table>
-</form>
+
+	<div class="input">
+		<br>
+	<center>	<h2>Formulir Pendaftaran Sukarelawan Covid-19 </h2></center>
+		<form action="tabel.php" method="POST" >
+			<table border="0" cellspacing="10" width="800" align="center">
+				<tbody>
+					<tr>
+						<td><h3><b>Identitas Data Diri</b></h3></td>
+					</tr>
+					<tr>
+						<td >Nama Lengkap</td>
+						<td>:</td>
+						<td><input class="lengkap" type="text" name="nama" placeholder="Nama Lengkap" size="50" maxlength="30" autocomplete="off" autofocus></td>
+					</tr>
+					<tr>
+						<td >Tempat Lahir</td>
+						<td>:</td>
+						<td><input class="lahir" type="text" name="tempat" placeholder="Tempat Lahir" size="50" maxlength="30" autocomplete="off" autofocus></td>
+					</tr>
+					<tr>
+						<td >Tanggal Lahir</td>
+						<td>:</td>
+						<td><input class="tgl" type="date" name="tanggal"></td>
+					</tr>
+					<tr>
+						<td>Jenis Kelamin</td>
+						<td>:</td>
+						<td><input class="jenis"type="radio" name="kelamin" value="Pria">Pria
+						<input type="radio" id="kelamin" name="kelamin" value="Wanita">Wanita</td>
+					</tr>
+					<tr>
+						<td >Email</td>
+						<td>:</td>
+						<td><input class="mail" type="text" name="email" placeholder="Email" size="50" maxlength="30" autocomplete="off" autofocus></td>
+					</tr>
+					<tr>
+						<td >No.Telepon</td>
+						<td>:</td>
+						<td><input class="tlp" type="text" name="telepon" placeholder="Nomor Telepon" size="20" maxlength="30" autocomplete="off" autofocus></td>
+					</tr>
+					<div class="batas">
+					<tr>
+					<td><h3><b>Domisili Tempat Tinggal</b></h3></td>
+					</tr>
+					<tr>
+						<td>Provinsi</td>
+						<td>:</td>
+						<td ><select class="provinsi" name="pilih">
+							<option value="">Pilih</option>
+							<option value="Jawa Barat">Jawa Barat</option>
+							<option value="Jawa Tengah">Jawa Tengah</option>
+							<option value="Jawa Timur">Jawa Timur</option>
+							<option value="DKI Jakarta">DKI Jakarta</option>
+							<option value="DI Yogyakarta">DI Yogyakarta</option>	
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td >Kabupaten</td>
+						<td>:</td>
+						<td><input class="kab" type="text" name="kabupaten" placeholder="Kabupaten" size="50" maxlength="30" autofocus></td>
+					</tr>
+					<tr>
+						<td >Kecamatan</td>
+						<td>:</td>
+						<td><input  class="kec" type="text" name="kecamatan" placeholder="Kecamatan" size="50" maxlength="30" autofocus></td>
+					</tr>
+					<tr>
+						<td >Desa</td>
+						<td>:</td>
+						<td><input class="ds" type="text" name="desa" placeholder="Desa" size="50" maxlength="30" autofocus></td>
+					</tr>
+					</div>
+				
+					<tr>
+						<td colspan="4"><button class="submit"type="submit" name="kirim">Kirim Data</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	 </div>
+
 </body>
 </html>
